@@ -34,7 +34,7 @@ body{
   width: 100vw;
   justify-content: center;
 }
-.Hero,.Testimonial{
+.Hero,.Testimonial{letter-spacing: normal;
   text-align: left;
   margin:auto;
   display: inline-flex;
