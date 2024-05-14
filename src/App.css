@@ -1,38 +1,101 @@
-.App {
+body{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #495E57;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
+  margin:auto;
+}
+.button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  background-color: #F4CE14;
+  border-radius: 0.5rem;
+  border: none;
+  color: Black;
+  cursor: pointer;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* align-self:start; */
+  /* align-items: center; */
+}
+#LogoTop{
+ padding-top: 2rem;
+}
+.TopLine{
+  color: black;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 100vw;
+  justify-content: center;
+}
+.Hero,.Testimonial{
+  text-align: left;
+  margin:auto;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #495E57;
+  width: 100vw;
+  justify-content: center;
+}
+.Paragraph{
+  text-align: left;
+  text-wrap: wrap;
+  grid-area:paragraph;
+  font-size: 1rem;
+}
+.HeroRight{
+  padding: 1rem;
+  grid-area: I;
+  margin: auto;
+}
+.Image{
+  border-radius: 0.5rem;
+  grid-area: IMG;
+  width: 25vw;
+  height: 15rem;
+  display: block;
+  object-fit: cover;
+}
+.Title{
+  grid-area: Title;
+  color: #F4CE14;
+}
+.Hero{
+  width: 50%;
+  display:grid;
+  grid-template-areas:
+  "Title I"
+  "Subtitle I"
+  "paragraph I"
+  "paragraph I";
+}
+.Highlight,.About{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  color: black;
+  width: 100vw;
+  justify-content: center;
+}
+.Nav li{
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  margin-top: 1rem;
+}
+.Footer {
+  justify-content: center;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
