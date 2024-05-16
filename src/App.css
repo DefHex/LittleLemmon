@@ -1,3 +1,37 @@
+/* roboto font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* markazi text */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Karla font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+.karla{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+.markazi-text-ForHeaders {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body{
   text-align: center;
   background-color: #495E57;
@@ -10,16 +44,17 @@ body{
   margin:auto;
 }
 .button {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: grid;
+  font-family:"Roboto";
+  font-weight: 450;
+  /* display: grid; */
   background-color: #F4CE14;
   border-radius: 0.5rem;
   border: none;
   color: Black;
   cursor: pointer;
   width: fit-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  margin-bottom: 1rem;
   /* align-self:start; */
   /* align-items: center; */
 }
@@ -34,7 +69,8 @@ body{
   width: 100vw;
   justify-content: center;
 }
-.Hero,.Testimonial{letter-spacing: normal;
+.Hero,.Testimonial{
+  letter-spacing: normal;
   text-align: left;
   margin:auto;
   display: inline-flex;
@@ -57,31 +93,105 @@ body{
 .Image{
   border-radius: 0.5rem;
   grid-area: IMG;
-  width: 25vw;
+  width: 22vw;
   height: 15rem;
   display: block;
   object-fit: cover;
+  margin-left: 3rem;
 }
 .Title{
+  margin-top: 2rem;
+  font-family:"Markazi Text";
+  font-size: 3rem;
+  font-weight: 100;
   grid-area: Title;
   color: #F4CE14;
 }
 .Hero{
   width: 50%;
-  display:grid;
-  grid-template-areas:
-  "Title I"
-  "Subtitle I"
-  "paragraph I"
-  "paragraph I";
 }
-.Highlight,.About{
-  display: inline-flex;
-  flex-direction: row;
+.HighlightContent button{
+  margin:auto;
+  grid-area: "btn";
+  float: right;
+}
+.HighlightBackground,.About{
   background-color: #ffffff;
   color: black;
   width: 100vw;
   justify-content: center;
+}
+.HighlightContent{
+  width: 50%;
+}
+#HighlightTitle{
+  width: auto;
+  font-family: "Karla";
+  text-align: left;
+  grid-area: "Title1";
+}
+.Card1,.Card2,.Card3{
+  border-radius: 10% 10% 0% 0%;
+  background-color: #EDEFEE;
+  width: 14rem;
+}
+.Card1Text,.Card2Text,.Card3Text{
+  padding: 0% 10% 0% 10%;
+  text-align: left;
+}
+.Card1 p,.Card2 p,.Card3 p{
+  color: #495E57;
+}
+.CardImage1,.CardImage2,.CardImage3{
+  border-radius: 10% 10% 0% 0%;
+  width: 14rem;
+  max-height: 9.5rem;
+  display: block;
+  object-fit: cover;
+}
+#Price1,#Price2,#Price3{
+  color: #EE9972;
+}
+.Card1{
+  grid-area: "C1";
+}
+.Card2{
+  grid-area: "C2";
+}
+.Card3{
+  grid-area: "C3";
+}
+.Card1 h4,.Card2 h4,.Card3 h4{
+  font-family: "Markazi Text";
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-size: larger;
+}
+.HighlightContent{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+  "Title1 . btn"
+  "C1 C2 C3";
+}
+
+.HighlightContent{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+  "Title1 . btn"
+  "C1 C2 C3";
 }
 .Nav li{
   display: inline-flex;
