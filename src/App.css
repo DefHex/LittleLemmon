@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Karla font */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 .karla{
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
@@ -31,9 +33,10 @@
   font-weight: 700;
   font-style: normal;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body{
-  text-align: center;
   background-color: #495E57;
   display: flex;
   flex-direction: column;
@@ -41,12 +44,10 @@ body{
   justify-content: center;
   color: white;
   text-align: center;
-  margin:auto;
 }
 .button {
   font-family:"Roboto";
   font-weight: 450;
-  /* display: grid; */
   background-color: #F4CE14;
   border-radius: 0.5rem;
   border: none;
@@ -55,8 +56,6 @@ body{
   width: fit-content;
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
   margin-bottom: 1rem;
-  /* align-self:start; */
-  /* align-items: center; */
 }
 #LogoTop{
  padding-top: 2rem;
@@ -67,17 +66,16 @@ body{
   flex-direction: row;
   background-color: #ffffff;
   width: 100vw;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .Hero,.Testimonial{
   letter-spacing: normal;
   text-align: left;
-  margin:auto;
   display: inline-flex;
   flex-direction: row;
   background-color: #495E57;
-  width: 100vw;
   justify-content: center;
+  width: 67%;
 }
 .Paragraph{
   text-align: left;
@@ -85,19 +83,64 @@ body{
   grid-area:paragraph;
   font-size: 1rem;
 }
-.HeroRight{
+.HeroRight,.AboutRight{
   padding: 1rem;
-  grid-area: I;
   margin: auto;
 }
-.Image{
+.AboutRight{
+  padding: 0rem 8rem 0rem 8rem;
+}
+.Image,.AboutImage{
   border-radius: 0.5rem;
-  grid-area: IMG;
-  width: 22vw;
+  width: 30vw;
   height: 15rem;
   display: block;
   object-fit: cover;
   margin-left: 3rem;
+  margin-right: 0%;
+}
+.AboutImage{
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.AboutImage1,.AboutImage2{
+  position: relative;
+  width: 20vw;
+  height: 20rem;
+  display: block;
+  object-fit: cover;
+  border: 1px black solid;
+  margin: 0%;
+}
+.AboutImage1{
+  top: 16rem;
+  right: 2rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+.AboutRight:hover .AboutImage1{
+  top: 10rem;
+  right: 1.5rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+.AboutImage2{
+  bottom: 16rem;
+  left: 8rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+.AboutRight:hover .AboutImage2{
+  bottom: 14rem;
+  left: 6rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+.AboutLeft{
+  margin-top: 8rem;
 }
 .Title{
   margin-top: 2rem;
@@ -107,11 +150,9 @@ body{
   grid-area: Title;
   color: #F4CE14;
 }
-.Hero{
-  width: 50%;
-}
 .HighlightContent button{
   margin:auto;
+  margin-right: 0;
   grid-area: "btn";
   float: right;
 }
@@ -121,8 +162,13 @@ body{
   width: 100vw;
   justify-content: center;
 }
-.HighlightContent{
-  width: 50%;
+.HighlightContent,.AboutContainer{
+  letter-spacing: normal;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 67%;
 }
 #HighlightTitle{
   width: auto;
@@ -132,24 +178,46 @@ body{
 }
 .Card1,.Card2,.Card3{
   border-radius: 10% 10% 0% 0%;
+  display: flex;
+  flex-direction: column;
   background-color: #EDEFEE;
-  width: 14rem;
+  width: auto;
 }
-.Card1Text,.Card2Text,.Card3Text{
+.Card2 p{
+  padding-bottom: 2rem;
+}
+.Card3 p{
+  padding-bottom: 1rem;
+}
+.CardText{
   padding: 0% 10% 0% 10%;
-  text-align: left;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.CardTitle{
+  display: flex;
+  justify-content: space-between;
 }
 .Card1 p,.Card2 p,.Card3 p{
+  text-align: left;
   color: #495E57;
+  justify-content: flex-start;
+  align-self: flex-start;
 }
-.CardImage1,.CardImage2,.CardImage3{
+.CardImage{
   border-radius: 10% 10% 0% 0%;
-  width: 14rem;
+  width: 100%;
   max-height: 9.5rem;
   display: block;
   object-fit: cover;
 }
-#Price1,#Price2,#Price3{
+#Price{
+  display: inline-flex;
+  justify-content: flex-end;
+  text-align: end;
   color: #EE9972;
 }
 .Card1{
@@ -161,29 +229,21 @@ body{
 .Card3{
   grid-area: "C3";
 }
-.Card1 h4,.Card2 h4,.Card3 h4{
+#FoodTitle{
+  margin-top: 1.2rem;
+  margin-bottom: auto;
+  display: inline-block;
   font-family: "Markazi Text";
-  display: flex;
-  flex-direction: row;
+  font-weight: 800;
+  text-align: start;
+  font-size: 1.5rem;
+}
+.Order{
+  justify-content: flex-end;
   text-align: left;
-  font-size: larger;
 }
 .HighlightContent{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 1rem;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-  "Title1 . btn"
-  "C1 C2 C3";
-}
-
-.HighlightContent{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0rem 2rem 0rem;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2rem;
@@ -196,16 +256,143 @@ body{
 .Nav li{
   display: inline-flex;
   flex-direction: row;
-  margin: 0.5rem;
+  justify-content: stretch;;
+  padding: 0rem 1rem 0rem 1rem;
   margin-top: 1rem;
 }
 .Footer {
-  justify-content: center;
   width: 100vw;
   display: inline-flex;
   flex-direction: row;
+  justify-content: center
+}
+.FooterContainer {
+  width: 50vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Footer ul{
+  list-style-type: none;
+  text-align: start;
+  color: white;
+  text-decoration: none;
+}
+.FooterSections{
+  color: #F4CE14;
+}
+.FooterContainer #LogoTop img{
+  height: auto;
+  width: auto;
+  max-width: 4rem;
+  max-height: 8rem;
+}
+a{
+  color: black;
+  font-family: "Karla";
+}
+.FooterContainer a{
+  color: #ffffff;
 }
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 
+/* For Tablets */
+@media only screen and (max-width: 1000px) {
+ 
+    .Hero,.Testimonial,.HighlightContent,.AboutContainer,.FooterContainer{
+      width: 90%;
+    }
+    .TopLine{
+      color: black;
+      display: inline-flex;
+      flex-direction: row;
+      background-color: #ffffff;
+      width: 100vw;
+      justify-content: center;
+    }
+}
 
+/* For Phones */
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
 
+  .Hero,.HighlightBackground,.HighlightContent,.Testimonial,.About,.AboutContainer,.Footer,.FooterContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .HeroLeft,.HighlightContent{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    width: 95vw;
+  }
+  .AboutRight{
+    padding: auto;
+  }
+  .Hero,.Testimonial,.FooterContainer,.Footer{
+    background-color: #495E57;
+  }
+  .HighlightContent,.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .TopLine{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-top: 1rem;
+  }
+  .AboutImage1,.AboutImage2{
+    position: relative;
+    width: 30vw;
+    height: 20rem;
+    display: block;
+    object-fit: cover;
+    border: 1px black solid;
+    margin: 0%;
+  }
+  .AboutImage1{
+    top: 16rem;
+    right: 1rem;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  .AboutRight:hover .AboutImage1{
+    top: 10rem;
+    right: 1rem;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  .AboutImage2{
+    bottom: 16rem;
+    left: 4rem;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  .AboutRight:hover .AboutImage2{
+    bottom: 14rem;
+    left: 2rem;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+}
