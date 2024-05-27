@@ -8,7 +8,7 @@ function Footer () {
     return(
         <div className="Footer">
             <div className="FooterContainer">
-                <div id="LogoTop"><img src="../android-chrome-192x192.png" alt="Logo" /></div>
+                <div id="LogoTop"><img src="%PUBLIC_URL%/android-chrome-192x192.png" alt="Logo" /></div>
                 <nav className="FooterSectionsContainer">
                     <ul>
                         <h2 className="FooterSections">Navigation</h2>
