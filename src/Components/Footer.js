@@ -1,6 +1,7 @@
 import "../App.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faLocationDot,faPhone,faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -22,11 +23,13 @@ function Footer () {
                 </nav>
                 <div className="FooterContact">
                     <h2 className="FooterSections">Contact</h2>
-                    <ul>
-                    <li><address>Address : Chicago</address></li>
-                    <li><a href="tel:+4953435453453">Phone : +4953435453453 </a></li>
-                    <li><a href= "mailto: testEmail@gmail.com"> Email : testEmail@gmail.com </a></li>
-                    </ul>
+                    <address>
+                        <ul>
+                        <li><FontAwesomeIcon icon={faLocationDot} />Address : Chicago</li>
+                        <li><FontAwesomeIcon icon={faPhone} /><a href="tel:+4953435453453">Phone : +4953435453453 </a></li>
+                        <li><FontAwesomeIcon icon={faEnvelope} /><a href= "mailto: testEmail@gmail.com"> Email : testEmail@gmail.com </a></li>
+                        </ul>
+                    </address>
                 </div>
                 <div>
                     <h2 className="FooterSections">Social Media Links</h2>
