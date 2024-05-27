@@ -2,6 +2,8 @@ import "../App.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
 
+
+
 function Footer () {
     return(
         <div className="Footer">
@@ -21,9 +23,9 @@ function Footer () {
                 <div className="FooterContact">
                     <h2 className="FooterSections">Contact</h2>
                     <ul>
-                    <li>Address : asdasd</li>
-                    <li>Phone : 534354534</li>
-                    <li>Email : asdasdas</li>
+                    <li><address>Address : Chicago</address></li>
+                    <li><a href="tel:+4953435453453">Phone : +4953435453453 </a></li>
+                    <li><a href= "mailto: testEmail@gmail.com"> Email : testEmail@gmail.com </a></li>
                     </ul>
                 </div>
                 <div>

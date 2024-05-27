@@ -326,9 +326,6 @@ a:active {
 
 /* For Phones */
 @media only screen and (max-width: 600px) {
-  body {
-    /* background-color: lightblue; */
-  }
 
   .Hero,.HighlightBackground,.HighlightContent,.Testimonial,.About,.AboutContainer,.Footer,.FooterContainer{
     width: 100vw;
