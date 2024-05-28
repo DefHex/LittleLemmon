@@ -16,7 +16,7 @@ function Main() {
                     <button className="button">Reserve a table</button>
                 </div>
                 <div className="HeroRight">
-                    <img className="Image" src="../ICO/restauranfood.jpg" alt="Bruchetta" />
+                    <img className="Image" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restauranfood.jpg?raw=true" alt="Bruchetta" />
                 </div>
             </div>
             <div className="HighlightBackground" id="Menu">
@@ -25,7 +25,7 @@ function Main() {
                     &nbsp;
                     <button className="button">Online Menu</button>
                     <div className="Card1">
-                        <img className="CardImage" src="../ICO/greek salad.jpg" alt="Greek salad" />
+                        <img className="CardImage" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/greek%20salad.jpg?raw=true" alt="Greek salad" />
                         <div className="CardText">
                             <div className="CardTitle">
                                 <h4 id="FoodTitle">Greek salad</h4>
@@ -39,7 +39,7 @@ function Main() {
                         </div>
                     </div>
                     <div className="Card2">
-                        <img className="CardImage" src="../ICO/bruchetta.svg" alt="Bruchetta" />
+                        <img className="CardImage" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/bruchetta.jpg?raw=true" alt="Bruchetta" />
                         <div className="CardText">
                             <div className="CardTitle">
                                 <h4 id="FoodTitle">Bruchetta</h4>
@@ -52,7 +52,7 @@ function Main() {
                         </div>
                     </div>
                     <div className="Card3">
-                        <img className="CardImage" src="../ICO/lemon dessert.jpg" alt="Bruchetta" />
+                        <img className="CardImage" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/lemon%20dessert.jpg?raw=true" alt="Lemon dessert" />
                         <div className="CardText">
                             <div className="CardTitle">
                                 <h4 id="FoodTitle">Lemon Dessert</h4>
@@ -81,8 +81,8 @@ function Main() {
                             locally sourced menu with daily specials.</p>
                     </div>
                     <div className="AboutRight">
-                        <img className="AboutImage1" src="../ICO/restaurant.jpg" alt="Bruchetta" />
-                        <img className="AboutImage2" src="../ICO/restaurant chef B.jpg" alt="Bruchetta" />
+                        <img className="AboutImage1" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restaurant.jpg?raw=true" alt="Restaurant patio" />
+                        <img className="AboutImage2" src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restaurant%20chef%20B.jpg?raw=true" alt="Restaurant chef" />
                     </div>
                 </div>
             </div>
