@@ -289,6 +289,7 @@ body{
   text-decoration: none;
 }
 .FooterSections{
+  text-align: "center";
   color: #F4CE14;
 }
 .FooterContainer #LogoTop img{
@@ -392,6 +393,16 @@ a:active {
     border-radius: 0.5rem; /* Optional: Add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
   }
+
+  .Image,.AboutImage{
+    border-radius: 0.5rem;
+    width: 90vw;
+    height: 25rem;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+  }
+
   .AboutImage1,.AboutImage2{
     position: relative;
     width: 30vw;

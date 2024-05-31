@@ -11,8 +11,8 @@ function Footer () {
             <div className="FooterContainer">
                 <div id="LogoTop"><img src="https://github.com/DefHex/LittleLemmon/blob/master/public/android-chrome-192x192.png?raw=true" alt="Logo" /></div>
                 <nav className="FooterSectionsContainer">
+                    <h2 className="FooterSections">Navigation</h2>
                     <ul>
-                        <h2 className="FooterSections">Navigation</h2>
                         <li><a href='#Home'>Home</a></li>
                         <li><a href='#About'>About</a></li>
                         <li><a href='#Menu'>Menu</a></li>
