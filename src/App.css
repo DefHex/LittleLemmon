@@ -45,6 +45,16 @@ body{
   color: white;
   text-align: center;
 }
+.menu-button {
+  justify-content: end;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 .button {
   font-family:"Roboto";
   font-weight: 450;
@@ -310,7 +320,6 @@ a:active {
 
 /* For Tablets */
 @media only screen and (max-width: 1000px) {
- 
     .Hero,.Testimonial,.HighlightContent,.AboutContainer,.FooterContainer{
       width: 90%;
     }
@@ -321,6 +330,10 @@ a:active {
       background-color: #ffffff;
       width: 100vw;
       justify-content: center;
+    }
+    .LogoTop{
+      padding-left: 2rem;
+      margin-left: 2rem;
     }
 }
 
@@ -348,16 +361,36 @@ a:active {
     align-items: center;
   }
   .TopLine{
+    color: black;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #ffffff;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+  }
+  .LogoTop{
+    display: inline-flex;
   }
   .Nav li{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     margin-top: 1rem;
+  }
+  .menu-button {
+    align-items: end;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .dropdown-menu {
+    text-align: center;
+    position: absolute;
+    top: 4rem; /* Adjust this value as needed to position below .menu-button and .LogoTop */
+    right: 1rem;
+    background-color: #ffffff; /* Optional: Add background color */
+    border-radius: 0.5rem; /* Optional: Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
   }
   .AboutImage1,.AboutImage2{
     position: relative;
