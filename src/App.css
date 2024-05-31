@@ -100,7 +100,7 @@ body{
 .AboutRight{
   padding: 0rem 8rem 0rem 8rem;
 }
-.Image,.AboutImage{
+.Image {
   border-radius: 0.5rem;
   width: 30vw;
   height: 15rem;
@@ -109,13 +109,7 @@ body{
   margin-left: 3rem;
   margin-right: 0%;
 }
-.AboutImage{
-  width: auto;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-}
+
 .AboutImage1,.AboutImage2{
   position: relative;
   width: 20vw;
@@ -392,9 +386,12 @@ a:active {
     background-color: #ffffff; /* Optional: Add background color */
     border-radius: 0.5rem; /* Optional: Add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    padding: 0rem, 0rem, 0rem, 0rem;
   }
-
-  .Image,.AboutImage{
+  .dropdown-menu ul{
+    padding:0%;
+  }
+    .Image {
     border-radius: 0.5rem;
     width: 90vw;
     height: 25rem;

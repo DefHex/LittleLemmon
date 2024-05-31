@@ -1,5 +1,5 @@
 import "../App.css";
-import Navbar from "./NavbarMobile";
+import NavbarMobile from "./NavbarMobile";
 import React, { useState, useEffect } from "react";
 function Nav() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,7 +19,7 @@ function Nav() {
       <nav>
         {isMobile ? (
           <div>
-            <Navbar />
+            <NavbarMobile />
           </div>
         ) : (
           <ul>
