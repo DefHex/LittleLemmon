@@ -33,13 +33,10 @@ function NavbarMobile() {
                   <a onClick={toggleMenu} href="#Menu">Menu</a>
                 </li>
                 <li>
-                  <a onClick={toggleMenu} href="#Reservations">Reservations</a>
+                  <a onClick={toggleMenu} href="#Contact">Contact</a>
                 </li>
                 <li>
-                  <a onClick={toggleMenu} href="#Order online">Order online</a>
-                </li>
-                <li>
-                  <a onClick={toggleMenu} href="#Login">Login</a>
+                  <a onClick={toggleMenu} href="#Testimonials">Testimonials</a>
                 </li>
               </ul>
             </div>

@@ -48,16 +48,6 @@ body{
   color: white;
   text-align: center;
 }
-.menu-button {
-  justify-content: end;
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
 .button {
   font-family:"Roboto";
   font-weight: 450;
@@ -72,6 +62,7 @@ body{
 }
 #LogoTop{
  padding-top: 2rem;
+ padding-left: 2rem;
 }
 .TopLine{
   color: black;
@@ -89,6 +80,9 @@ body{
   background-color: #495E57;
   justify-content: center;
   width: 67%;
+}
+.Testimonial{
+  flex-direction: column;
 }
 .Paragraph{
   text-align: left;
@@ -149,13 +143,59 @@ body{
 .AboutLeft{
   margin-top: 8rem;
 }
-.Title{
+.Title,.TestimonialHeader{
   margin-top: 2rem;
   font-family:"Markazi Text";
   font-size: 3rem;
   font-weight: 100;
   grid-area: Title;
   color: #F4CE14;
+}
+.TestimonialHeader{
+  text-align: center;
+}
+.ReviewContainer{
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+}
+.Review{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDEFEE;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  background-color: #fff;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .2);
+  height: 16rem;
+  margin: 1em;
+  width: 16rem;
+}
+.ReviewRating{
+  max-width: 10em;
+}
+.ReviewImage{
+  align-items: center;
+  justify-content: center;
+  max-height: 9.5rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .2);
+  margin: 1em;
+  width: 30%;
+  /* min-width: 5em; */
+}
+.ReviewText{
+  color: #495E57;
 }
 .HighlightContent button{
   margin:auto;
@@ -302,18 +342,36 @@ a{
 .FooterContainer a{
   color: #ffffff;
 }
-
+.FooterContainer a:hover{
+  color: #F4CE14;
+}
+.Nav a:hover{
+  color: #F4CE14;
+  transform: scale(1.2);
+  will-change:scroll-position;
+  transition: 300ms;
+}
 a:link {
   text-decoration: none;
 }
 a:visited {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: none;
-}
+/* a:hover {
+  color: #F4CE14;
+} */
 a:active {
   text-decoration: none;
+}
+.TurnYellow{
+  -webkit-transition: all 250ms;
+  transition: 300ms;
+}
+.TurnYellow:hover{
+  -webkit-transition: all 250ms;
+  color: #F4CE14;
+  transition: 300ms;
+  will-change:scroll-position;
 }
 
 /* For Tablets */
@@ -344,11 +402,13 @@ a:active {
     flex-direction: column;
   }
   .HeroLeft,.HighlightContent{
-    padding: 0rem 0.5rem 0rem 0.5rem;
+    /* padding: 0rem 0rem 0rem 1rem; */
+    margin: auto;
     width: 95vw;
   }
   .AboutRight{
-    padding: auto;
+    padding: 0rem;
+    margin: auto;
   }
   .Hero,.Testimonial,.FooterContainer,.Footer{
     background-color: #495E57;
@@ -380,6 +440,9 @@ a:active {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    padding: 0;
+    border: none;
+    background: none;
   }
   .dropdown-menu {
     text-align: center;
@@ -389,12 +452,12 @@ a:active {
     background-color: #ffffff; /* Optional: Add background color */
     border-radius: 0.5rem; /* Optional: Add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
-    padding: 0rem, 0rem, 0rem, 0rem;
+    padding: 0rem, 1rem, 0rem, 1rem;
   }
   .dropdown-menu ul{
     padding:0%;
   }
-    .Image {
+  .Image {
     border-radius: 0.5rem;
     width: 90vw;
     height: 25rem;
@@ -402,7 +465,15 @@ a:active {
     object-fit: cover;
     margin: auto;
   }
-
+  /* .ReviewContainer{
+  } */
+  .Review{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .AboutLeft{
+    padding-left: 1rem;
+    width: 95%;
+  }
   .AboutImage1,.AboutImage2{
     position: relative;
     width: 30vw;
