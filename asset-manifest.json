@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/LittleLemmon/static/css/main.389ce9b7.css",
-    "main.js": "/LittleLemmon/static/js/main.599acc07.js",
+    "main.css": "/LittleLemmon/static/css/main.ea1e9b48.css",
+    "main.js": "/LittleLemmon/static/js/main.3b90dc5b.js",
     "static/js/453.8dae57ee.chunk.js": "/LittleLemmon/static/js/453.8dae57ee.chunk.js",
+    "static/media/download (2).jpg": "/LittleLemmon/static/media/download (2).b800929e5358df960bad.jpg",
+    "static/media/download.jpg": "/LittleLemmon/static/media/download.1aaffdf24af07ce59bb8.jpg",
+    "static/media/download (1).jpg": "/LittleLemmon/static/media/download (1).7763260864531463516f.jpg",
+    "static/media/download (3).jpg": "/LittleLemmon/static/media/download (3).bc8c41ff7f6e7804cce5.jpg",
+    "static/media/rating.5Stars.png": "/LittleLemmon/static/media/rating.5Stars.33edb6d38b2d41f4bba0.png",
     "index.html": "/LittleLemmon/index.html",
-    "main.389ce9b7.css.map": "/LittleLemmon/static/css/main.389ce9b7.css.map",
-    "main.599acc07.js.map": "/LittleLemmon/static/js/main.599acc07.js.map",
+    "main.ea1e9b48.css.map": "/LittleLemmon/static/css/main.ea1e9b48.css.map",
+    "main.3b90dc5b.js.map": "/LittleLemmon/static/js/main.3b90dc5b.js.map",
     "453.8dae57ee.chunk.js.map": "/LittleLemmon/static/js/453.8dae57ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.389ce9b7.css",
-    "static/js/main.599acc07.js"
+    "static/css/main.ea1e9b48.css",
+    "static/js/main.3b90dc5b.js"
   ]
 }
