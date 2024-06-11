@@ -1,6 +1,12 @@
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
+import restauranfood from "../IMG/restauranfood.jpg";
+import GreekSalad from "../IMG/greek salad.jpg";
+import Bruchetta from "../IMG/bruchetta.jpg";
+import LemonDessert from "../IMG/lemon dessert.jpg";
+import RestaurantPatio from "../IMG/restaurant.jpg";
+import RestaurantChefB from "../IMG/restaurant chef B.jpg";
 import reviewImage1 from "../review/download.jpg";
 import reviewImage2 from "../review/download (1).jpg";
 import reviewImage3 from "../review/download (2).jpg";
@@ -24,7 +30,7 @@ function Main() {
         <div className="HeroRight">
           <img
             className="Image"
-            src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restauranfood.jpg?raw=true"
+            src={restauranfood}
             alt="Bruchetta"
           />
         </div>
@@ -37,7 +43,7 @@ function Main() {
           <div className="Card1">
             <img
               className="CardImage"
-              src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/greek%20salad.jpg?raw=true"
+              src={GreekSalad}
               alt="Greek salad"
             />
             <div className="CardText">
@@ -58,7 +64,7 @@ function Main() {
           <div className="Card2">
             <img
               className="CardImage"
-              src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/bruchetta.jpg?raw=true"
+              src={Bruchetta}
               alt="Bruchetta"
             />
             <div className="CardText">
@@ -78,7 +84,7 @@ function Main() {
           <div className="Card3">
             <img
               className="CardImage"
-              src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/lemon%20dessert.jpg?raw=true"
+              src={LemonDessert}
               alt="Lemon dessert"
             />
             <div className="CardText">
@@ -182,12 +188,12 @@ function Main() {
           <div className="AboutRight">
             <img
               className="AboutImage1"
-              src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restaurant.jpg?raw=true"
+              src={RestaurantPatio}
               alt="Restaurant patio"
             />
             <img
               className="AboutImage2"
-              src="https://github.com/DefHex/LittleLemmon/blob/master/src/IMG/restaurant%20chef%20B.jpg?raw=true"
+              src={RestaurantChefB}
               alt="Restaurant chef"
             />
           </div>
