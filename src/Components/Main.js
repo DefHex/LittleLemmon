@@ -1,5 +1,5 @@
 import "../App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
 import restauranfood from "../IMG/restauranfood.jpg";
@@ -14,6 +14,7 @@ import reviewImage3 from "../review/download (2).jpg";
 import reviewImage4 from "../review/download (3).jpg";
 import reviewRating from "../review/rating.5Stars.png";
 
+
 function Main() {
   return (
     <div>
@@ -26,7 +27,8 @@ function Main() {
             food and classic cocktails in a lively, but casual environment. The
             restaurant features a locally sourced menu with daily specials.
           </p>
-          <button className="button">Reserve a table</button>
+          <Link className="button-link" to="/Booking">Reserve a table</Link>
+          {/* <button className="button" ><Link className="button" to="/Booking">Reserve a table</Link></button> */}
         </div>
         <div className="HeroRight">
           <img

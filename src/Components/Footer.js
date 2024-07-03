@@ -1,6 +1,7 @@
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Routes, Route, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import {
   faFacebook,
   faInstagram,
@@ -27,19 +28,32 @@ function Footer() {
             <h2 className="FooterSections">Navigation</h2>
             <ul>
               <li>
-                <a href="#Home">Home</a>
+                <Link to="/Booking">Booking</Link>
               </li>
               <li>
-                <a href="#About">About</a>
+                <HashLink smooth to="/#Home">
+                  Home
+                </HashLink>
               </li>
               <li>
-                <a href="#Menu">Menu</a>
+                <HashLink smooth to="/#About">
+                  About
+                </HashLink>
               </li>
               <li>
-                <a href="#Contact">Contact</a>
+                <HashLink smooth to="/#Menu">
+                  Menu
+                </HashLink>
               </li>
               <li>
-                <a href="#Testimonials">Testimonials</a>
+                <HashLink smooth to="/#Contact">
+                  Contact
+                </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/#Testimonials">
+                  Testimonials
+                </HashLink>
               </li>
             </ul>
           </nav>
@@ -48,16 +62,23 @@ function Footer() {
             <address>
               <ul>
                 <li>
-                <a href="http://maps.google.com/?q=Chicago restaurant" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLocationDot} /> {" "} Address : Chicago</a>
+                  <a
+                    href="http://maps.google.com/?q=Chicago restaurant"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLocationDot} /> Address : Chicago
+                  </a>
                 </li>
                 <li>
-                  <a href="tel:+4953435453453"><FontAwesomeIcon icon={faPhone} /> Phone : +4953435453453 </a>
+                  <a href="tel:+4953435453453">
+                    <FontAwesomeIcon icon={faPhone} /> Phone : +4953435453453{" "}
+                  </a>
                 </li>
                 <li>
                   <a href="mailto: testEmail@gmail.com">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                    {" "}
-                    Email : testEmail@gmail.com{" "}
+                    <FontAwesomeIcon icon={faEnvelope} /> Email :
+                    testEmail@gmail.com{" "}
                   </a>
                 </li>
               </ul>

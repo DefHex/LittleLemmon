@@ -1,12 +1,14 @@
 /* roboto font import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* markazi text */
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* Karla font */
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-
-.karla{
+.button-link {
+  padding-bottom: 2rem;
+}
+.karla {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: auto;
@@ -36,11 +38,11 @@
 html {
   scroll-behavior: smooth;
   /* changes */
-  will-change:scroll-position;
+  will-change: scroll-position;
   /* test it on mobile */
 }
-body{
-  background-color: #495E57;
+body {
+  background-color: #495e57;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,10 +50,12 @@ body{
   color: white;
   text-align: center;
 }
-.button {
-  font-family:"Roboto";
+.button,
+.button-link,
+.submitBtn {
+  font-family: "Roboto";
   font-weight: 450;
-  background-color: #F4CE14;
+  background-color: #f4ce14;
   border-radius: 0.5rem;
   border: none;
   color: Black;
@@ -60,11 +64,14 @@ body{
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
   margin-bottom: 1rem;
 }
-#LogoTop{
- padding-top: 2rem;
- padding-left: 2rem;
+.button-link {
+  margin-bottom: 2rem;
 }
-.TopLine{
+#LogoTop {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.TopLine {
   color: black;
   display: inline-flex;
   flex-direction: row;
@@ -72,29 +79,32 @@ body{
   width: 100vw;
   justify-content: space-evenly;
 }
-.Hero,.Testimonial{
+.Hero,
+.Testimonial {
+  margin-bottom: 2rem;
   letter-spacing: normal;
   text-align: left;
   display: inline-flex;
   flex-direction: row;
-  background-color: #495E57;
+  background-color: #495e57;
   justify-content: center;
   width: 67%;
 }
-.Testimonial{
+.Testimonial {
   flex-direction: column;
 }
-.Paragraph{
+.Paragraph {
   text-align: left;
   text-wrap: wrap;
-  grid-area:paragraph;
+  grid-area: paragraph;
   font-size: 1rem;
 }
-.HeroRight,.AboutRight{
+.HeroRight,
+.AboutRight {
   padding: 1rem;
   margin: auto;
 }
-.AboutRight{
+.AboutRight {
   padding: 0rem 8rem 0rem 8rem;
 }
 .Image {
@@ -107,7 +117,8 @@ body{
   margin-right: 0%;
 }
 
-.AboutImage1,.AboutImage2{
+.AboutImage1,
+.AboutImage2 {
   position: relative;
   width: 20vw;
   height: 20rem;
@@ -116,45 +127,48 @@ body{
   border: 1px black solid;
   margin: 0%;
 }
-.AboutImage1{
+.AboutImage1 {
   top: 16rem;
   right: 2rem;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
-.AboutRight:hover .AboutImage1{
+.AboutRight:hover .AboutImage1 {
   top: 10rem;
   right: 1.5rem;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
-.AboutImage2{
+.AboutImage2 {
   bottom: 16rem;
   left: 8rem;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
-.AboutRight:hover .AboutImage2{
+.AboutRight:hover .AboutImage2 {
   bottom: 14rem;
   left: 6rem;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
-.AboutLeft{
+.AboutLeft {
   margin-top: 8rem;
 }
-.Title,.TestimonialHeader{
+.Title,
+.TestimonialHeader,
+.Booking >h2 ,
+.BookingSuccess >h2{
   margin-top: 2rem;
-  font-family:"Markazi Text";
+  font-family: "Markazi Text";
   font-size: 3rem;
   font-weight: 100;
   grid-area: Title;
-  color: #F4CE14;
+  color: #f4ce14;
 }
-.TestimonialHeader{
+.TestimonialHeader {
   text-align: center;
 }
-.ReviewContainer{
+.ReviewContainer {
   text-align: center;
   display: inline-flex;
   flex-direction: row;
@@ -166,50 +180,64 @@ body{
   justify-content: center;
   width: 100%;
 }
-.Review{
+.Review {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #EDEFEE;
+  background-color: #edefee;
   margin: 0rem 0.5rem 0rem 0.5rem;
   background-color: #fff;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, .2);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
   height: 16rem;
   margin: 1em;
   width: 16rem;
 }
-.ReviewRating{
+.ReviewRating {
   max-width: 10em;
 }
-.ReviewImage{
+.ReviewImage {
   align-items: center;
   justify-content: center;
   max-height: 9.5rem;
   display: block;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, .2);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
   margin: 1em;
   width: 30%;
   /* min-width: 5em; */
 }
-.ReviewText{
-  color: #495E57;
+.ReviewText {
+  color: #495e57;
 }
-.HighlightContent button{
-  margin:auto;
+.HighlightContent button {
+  margin: auto;
   margin-right: 0;
   grid-area: "btn";
   float: right;
 }
-.HighlightBackground,.About{
+.HighlightBackground,
+.About,
+.BookingConfirmed {
   background-color: #ffffff;
   color: black;
   width: 100vw;
   justify-content: center;
 }
-.HighlightContent,.AboutContainer{
+.BookingConfirmedContainer{
+  font-family: "Roboto";
+  max-width: fit-content;
+  width: 67%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+.HighlightContent,
+.AboutContainer {
   letter-spacing: normal;
   text-align: left;
   display: inline-flex;
@@ -217,26 +245,28 @@ body{
   justify-content: center;
   width: 67%;
 }
-#HighlightTitle{
+#HighlightTitle {
   width: auto;
   font-family: "Karla";
   text-align: left;
   grid-area: "Title1";
 }
-.Card1,.Card2,.Card3{
+.Card1,
+.Card2,
+.Card3 {
   border-radius: 10% 10% 0% 0%;
   display: flex;
   flex-direction: column;
-  background-color: #EDEFEE;
+  background-color: #edefee;
   width: auto;
 }
-.Card2 p{
+.Card2 p {
   padding-bottom: 2rem;
 }
-.Card3 p{
+.Card3 p {
   padding-bottom: 1rem;
 }
-.CardText{
+.CardText {
   padding: 0% 10% 0% 10%;
   margin: auto;
   display: flex;
@@ -244,39 +274,41 @@ body{
   justify-content: space-between;
   flex: 1;
 }
-.CardTitle{
+.CardTitle {
   display: flex;
   justify-content: space-between;
 }
-.Card1 p,.Card2 p,.Card3 p{
+.Card1 p,
+.Card2 p,
+.Card3 p {
   text-align: left;
-  color: #495E57;
+  color: #495e57;
   justify-content: flex-start;
   align-self: flex-start;
 }
-.CardImage{
+.CardImage {
   border-radius: 10% 10% 0% 0%;
   width: 100%;
   max-height: 9.5rem;
   display: block;
   object-fit: cover;
 }
-#Price{
+#Price {
   display: inline-flex;
   justify-content: flex-end;
   text-align: end;
-  color: #EE9972;
+  color: #ee9972;
 }
-.Card1{
+.Card1 {
   grid-area: "C1";
 }
-.Card2{
+.Card2 {
   grid-area: "C2";
 }
-.Card3{
+.Card3 {
   grid-area: "C3";
 }
-#FoodTitle{
+#FoodTitle {
   margin-top: 1.2rem;
   margin-bottom: auto;
   display: inline-block;
@@ -285,11 +317,11 @@ body{
   text-align: start;
   font-size: 1.5rem;
 }
-.Order{
+.Order {
   justify-content: flex-end;
   text-align: left;
 }
-.HighlightContent{
+.HighlightContent {
   margin: 3rem 0rem 2rem 0rem;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -297,13 +329,13 @@ body{
   row-gap: 1rem;
   grid-template-rows: auto 1fr;
   grid-template-areas:
-  "Title1 . btn"
-  "C1 C2 C3";
+    "Title1 . btn"
+    "C1 C2 C3";
 }
-.Nav li{
+.Nav li {
   display: inline-flex;
   flex-direction: row;
-  justify-content: stretch;;
+  justify-content: stretch;
   padding: 0rem 1rem 0rem 1rem;
   margin-top: 1rem;
 }
@@ -311,7 +343,7 @@ body{
   width: 100vw;
   display: inline-flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
 }
 .FooterContainer {
   width: 50vw;
@@ -319,36 +351,36 @@ body{
   flex-direction: row;
   justify-content: space-between;
 }
-.Footer ul{
+.Footer ul {
   list-style-type: none;
   text-align: start;
   color: white;
   text-decoration: none;
 }
-.FooterSections{
+.FooterSections {
   text-align: "center";
-  color: #F4CE14;
+  color: #f4ce14;
 }
-.FooterContainer #LogoTop img{
+.FooterContainer #LogoTop img {
   height: auto;
   width: auto;
   max-width: 4rem;
   max-height: 8rem;
 }
-a{
+a {
   color: black;
   font-family: "Karla";
 }
-.FooterContainer a{
+.FooterContainer a {
   color: #ffffff;
 }
-.FooterContainer a:hover{
-  color: #F4CE14;
+.FooterContainer a:hover {
+  color: #f4ce14;
 }
-.Nav a:hover{
-  color: #F4CE14;
+.Nav a:hover {
+  color: #f4ce14;
   transform: scale(1.2);
-  will-change:scroll-position;
+  will-change: scroll-position;
   transition: 300ms;
 }
 a:link {
@@ -363,62 +395,76 @@ a:visited {
 a:active {
   text-decoration: none;
 }
-.TurnYellow{
+.TurnYellow {
   -webkit-transition: all 250ms;
   transition: 300ms;
 }
-.TurnYellow:hover{
+.TurnYellow:hover {
   -webkit-transition: all 250ms;
-  color: #F4CE14;
+  color: #f4ce14;
   transition: 300ms;
-  will-change:scroll-position;
+  will-change: scroll-position;
+}
+
+.Booking {
+  width: 100%;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+.BookingContainer {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  label {
+    font-family: "Karla";
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  input {
+    width: 67%;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 0.2rem solid;
+    border-radius: 4px;
+  }
+  input:invalid,
+  select:invalid {
+    border: 2px solid red;
+  }
+  input:focus {
+    background-color: lightblue;
+  }
+  select {
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 0.2rem solid;
+    border-radius: 4px;
+  }
+  select:invalid {
+    border: 2px solid red;
+  }
+  .Err{
+    font-family: "Karla";
+    color: red;
+  }
 }
 
 /* For Tablets */
 @media only screen and (max-width: 1000px) {
-    .Hero,.Testimonial,.HighlightContent,.AboutContainer,.FooterContainer{
-      width: 90%;
-    }
-    .TopLine{
-      color: black;
-      display: inline-flex;
-      flex-direction: row;
-      background-color: #ffffff;
-      width: 100vw;
-      justify-content: center;
-    }
-    .LogoTop{
-      padding-left: 2rem;
-      margin-left: 2rem;
-    }
-}
-
-/* For Phones */
-@media only screen and (max-width: 600px) {
-
-  .Hero,.HighlightBackground,.HighlightContent,.Testimonial,.About,.AboutContainer,.Footer,.FooterContainer{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+  .Hero,
+  .Testimonial,
+  .HighlightContent,
+  .AboutContainer,
+  .FooterContainer {
+    width: 90%;
   }
-  .HeroLeft,.HighlightContent{
-    /* padding: 0rem 0rem 0rem 1rem; */
-    margin: auto;
-    width: 95vw;
-  }
-  .AboutRight{
-    padding: 0rem;
-    margin: auto;
-  }
-  .Hero,.Testimonial,.FooterContainer,.Footer{
-    background-color: #495E57;
-  }
-  .HighlightContent,.About{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .TopLine{
+  .TopLine {
     color: black;
     display: inline-flex;
     flex-direction: row;
@@ -426,10 +472,58 @@ a:active {
     width: 100vw;
     justify-content: center;
   }
-  .LogoTop{
-    display: inline-flex;
+}
+
+/* For Phones */
+@media only screen and (max-width: 600px) {
+  .Hero,
+  .HighlightBackground,
+  .HighlightContent,
+  .Testimonial,
+  .About,
+  .AboutContainer,
+  .Footer,
+  .FooterContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
-  .Nav li{
+  .HeroLeft,
+  .HighlightContent {
+    /* padding: 0rem 0rem 0rem 1rem; */
+    margin: auto;
+    width: 95vw;
+  }
+  .AboutRight {
+    padding: 0rem;
+    margin: auto;
+  }
+  .Hero,
+  .Testimonial,
+  .FooterContainer,
+  .Footer {
+    background-color: #495e57;
+  }
+  .HighlightContent,
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .TopLine {
+    color: black;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100vw;
+    justify-content: center;
+  }
+  #LogoTop {
+    display: inline-flex;
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+  .Nav li {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -440,7 +534,7 @@ a:active {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    padding: 0;
+    padding: 0.5rem 0rem;
     border: none;
     background: none;
   }
@@ -454,8 +548,8 @@ a:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
     padding: 0rem, 1rem, 0rem, 1rem;
   }
-  .dropdown-menu ul{
-    padding:0%;
+  .dropdown-menu ul {
+    padding: 0%;
   }
   .Image {
     border-radius: 0.5rem;
@@ -467,14 +561,15 @@ a:active {
   }
   /* .ReviewContainer{
   } */
-  .Review{
+  .Review {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
-  .AboutLeft{
+  .AboutLeft {
     padding-left: 1rem;
     width: 95%;
   }
-  .AboutImage1,.AboutImage2{
+  .AboutImage1,
+  .AboutImage2 {
     position: relative;
     width: 30vw;
     height: 20rem;
@@ -483,25 +578,25 @@ a:active {
     border: 1px black solid;
     margin: 0%;
   }
-  .AboutImage1{
+  .AboutImage1 {
     top: 16rem;
     right: 1rem;
     -webkit-transition: all 250ms;
     transition: all 250ms;
   }
-  .AboutRight:hover .AboutImage1{
+  .AboutRight:hover .AboutImage1 {
     top: 10rem;
     right: 1rem;
     -webkit-transition: all 250ms;
     transition: all 250ms;
   }
-  .AboutImage2{
+  .AboutImage2 {
     bottom: 16rem;
     left: 4rem;
     -webkit-transition: all 250ms;
     transition: all 250ms;
   }
-  .AboutRight:hover .AboutImage2{
+  .AboutRight:hover .AboutImage2 {
     bottom: 14rem;
     left: 2rem;
     -webkit-transition: all 250ms;
