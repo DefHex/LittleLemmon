@@ -27,14 +27,13 @@ function Main() {
             food and classic cocktails in a lively, but casual environment. The
             restaurant features a locally sourced menu with daily specials.
           </p>
-          <Link className="button-link" to="/Booking">Reserve a table</Link>
-          {/* <button className="button" ><Link className="button" to="/Booking">Reserve a table</Link></button> */}
+          <Link to="/LittleLemmon/Booking"><button className="button">Reserve a table</button></Link>
         </div>
         <div className="HeroRight">
           <img
             className="Image"
             src={restauranfood}
-            alt="Bruchetta"
+            alt="Restaurant food"
           />
         </div>
       </div>
