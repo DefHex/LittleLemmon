@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LittleLemmon/static/css/main.c6682f8c.css",
-    "main.js": "/LittleLemmon/static/js/main.d65ba804.js",
+    "main.css": "/LittleLemmon/static/css/main.d6dd4bc1.css",
+    "main.js": "/LittleLemmon/static/js/main.797e5073.js",
     "static/js/453.8dae57ee.chunk.js": "/LittleLemmon/static/js/453.8dae57ee.chunk.js",
     "static/media/restaurant chef B.jpg": "/LittleLemmon/static/media/restaurant chef B.4b4c2d26b514db32e8fc.jpg",
     "static/media/greek salad.jpg": "/LittleLemmon/static/media/greek salad.bed423a1fab5b210e347.jpg",
@@ -14,12 +14,12 @@
     "static/media/restaurant.jpg": "/LittleLemmon/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
     "static/media/rating.5Stars.png": "/LittleLemmon/static/media/rating.5Stars.33edb6d38b2d41f4bba0.png",
     "index.html": "/LittleLemmon/index.html",
-    "main.c6682f8c.css.map": "/LittleLemmon/static/css/main.c6682f8c.css.map",
-    "main.d65ba804.js.map": "/LittleLemmon/static/js/main.d65ba804.js.map",
+    "main.d6dd4bc1.css.map": "/LittleLemmon/static/css/main.d6dd4bc1.css.map",
+    "main.797e5073.js.map": "/LittleLemmon/static/js/main.797e5073.js.map",
     "453.8dae57ee.chunk.js.map": "/LittleLemmon/static/js/453.8dae57ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6682f8c.css",
-    "static/js/main.d65ba804.js"
+    "static/css/main.d6dd4bc1.css",
+    "static/js/main.797e5073.js"
   ]
 }
