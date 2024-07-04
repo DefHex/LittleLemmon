@@ -28,30 +28,30 @@ function Footer() {
             <h2 className="FooterSections">Navigation</h2>
             <ul>
               <li>
-                <Link to="/Booking">Booking</Link>
+                <Link to="/LittleLemmon/Booking">Booking</Link>
               </li>
               <li>
-                <HashLink smooth to="/#Home">
+                <HashLink smooth to="/LittleLemmon/#Home">
                   Home
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/#About">
+                <HashLink smooth to="/LittleLemmon/#About">
                   About
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/#Menu">
+                <HashLink smooth to="/LittleLemmon/#Menu">
                   Menu
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/#Contact">
+                <HashLink smooth to="/LittleLemmon/#Contact">
                   Contact
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/#Testimonials">
+                <HashLink smooth to="/LittleLemmon/#Testimonials">
                   Testimonials
                 </HashLink>
               </li>

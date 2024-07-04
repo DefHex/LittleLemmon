@@ -26,37 +26,37 @@ function NavbarMobile() {
           <div className="dropdown-menu">
             <ul>
               <li>
-                <Link onClick={toggleMenu} to="/Booking">
+                <Link onClick={toggleMenu} to="/LittleLemmon/Booking">
                   Booking
                 </Link>
               </li>
               <li>
                 {/* <a onClick={toggleMenu} href="#Home">Home</a> */}
-                <HashLink onClick={toggleMenu} smooth to="/#Home">
+                <HashLink onClick={toggleMenu} smooth to="/LittleLemmon/#Home">
                   Home
                 </HashLink>
               </li>
               <li>
                 {/* <a onClick={toggleMenu} href="#About">About</a> */}
-                <HashLink onClick={toggleMenu} smooth to="/#About">
+                <HashLink onClick={toggleMenu} smooth to="/LittleLemmon/#About">
                   About
                 </HashLink>
               </li>
               <li>
                 {/* <a onClick={toggleMenu} href="#Menu">Menu</a> */}
-                <HashLink onClick={toggleMenu} smooth to="/#Menu">
+                <HashLink onClick={toggleMenu} smooth to="/LittleLemmon/#Menu">
                   Menu
                 </HashLink>
               </li>
               <li>
                 {/* <a onClick={toggleMenu} href="#Contact">Contact</a> */}
-                <HashLink onClick={toggleMenu} smooth to="/#Contact">
+                <HashLink onClick={toggleMenu} smooth to="/LittleLemmon/#Contact">
                   Contact
                 </HashLink>
               </li>
               <li>
                 {/* <a onClick={toggleMenu} href="#Testimonials">Testimonials</a> */}
-                <HashLink onClick={toggleMenu} smooth to="/#Testimonials">
+                <HashLink onClick={toggleMenu} smooth to="/LittleLemmon/#Testimonials">
                   Testimonials
                 </HashLink>
               </li>

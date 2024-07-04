@@ -35,35 +35,35 @@ function Nav() {
           ) : (
             <ul>
               <li>
-                <Link to="/Booking">Booking</Link>
+                <Link to="/LittleLemmon/Booking">Booking</Link>
               </li>
               <li>
                 {/* <a href="#Home">Home</a> */}
-                <HashLink smooth to="/#Home">
+                <HashLink smooth to="/LittleLemmon/#Home">
                   Home
                 </HashLink>
               </li>
               <li>
                 {/* <a href="#About">About</a> */}
-                <HashLink smooth to="/#About">
+                <HashLink smooth to="/LittleLemmon/#About">
                   About
                 </HashLink>
               </li>
               <li>
                 {/* <a href="#Menu">Menu</a> */}
-                <HashLink smooth to="/#Menu">
+                <HashLink smooth to="/LittleLemmon/#Menu">
                   Menu
                 </HashLink>
               </li>
               <li>
                 {/* <a href="#Contact">Contact</a> */}
-                <HashLink smooth to="/#Contact">
+                <HashLink smooth to="/LittleLemmon/#Contact">
                   Contact
                 </HashLink>
               </li>
               <li>
                 {/* <a href="#Testimonials">Testimonials</a> */}
-                <HashLink smooth to="/#Testimonials">
+                <HashLink smooth to="/LittleLemmon/#Testimonials">
                   Testimonials
                 </HashLink>
               </li>
