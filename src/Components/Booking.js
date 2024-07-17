@@ -121,12 +121,13 @@ function Booking() {
             id="Hour"
             name="Hour"
             placeholder="Hour"
+            defaultValue={""}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.Hour}
           >
             {/* <option value="">Hour</option> */}
-            <option value="" disabled selected>
+            <option value="" disabled>
               Hour
             </option>
             <option value="13">13</option>
@@ -147,12 +148,13 @@ function Booking() {
             id="Minutes"
             name="Minutes"
             placeholder="Minutes"
+            defaultValue={""}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.Minutes}
           >
             {/* <option value="">Minutes</option> */}
-            <option value="" disabled selected>
+            <option value="" disabled>
               Minutes
             </option>
             <option value="00">00</option>
